@@ -35,7 +35,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+   
 }
 body, input, button, textarea {
     font-weight: 500;
@@ -44,8 +44,6 @@ body, input, button, textarea {
     color: var(--color-text-base)
 }
 #container {
-
     width: 90vw;
     max-width: 700px;
-    border: 1px solid red;
 }
