@@ -51,7 +51,7 @@
 .input-block, .textarea-block {
     position: relative;
 }
-.input-block:focus-within::after,  .textarea-block:focus-within::after{
+.input-block:focus-within::after, .textarea-block:focus-within::after {
     content: "";
     width: calc(100% - 3.2rem);
     height: 2px;

@@ -49,7 +49,60 @@
                             <textarea name="bio" id="bio" required></textarea>
                         </div>
                     </fieldset>
+                    <fieldset>
+                        <legend>Sobre a aula</legend>
+                        <div class="select-block">
+                            <label for="subject">Máteria</label>
+                            <select name="subject" id="subject" required>
+                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ciências</option>
+                                <option value="4">Educação física</option>
+                                <option value="5">Física</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">História</option>
+                                <option value="8">Matemática</option>
+                                <option value="9">Português</option>
+                                <option value="10">Química</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label for="cost">Custo por hora <small>(R$)</small></label>
+                            <input type="cost" id="cost" type="number" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Horários disponíveis<button id="add-time">+ Novo Horário</button></legend>
+                        <div class="schedule-item">
+                            <div class="select-block">
+                                <label for="weekday">Dia da semana</label>
+                                <select name="weekday[]" required>
+                                    <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                    <option value="0">Domingo</option>
+                                    <option value="1">Segunda-feira</option>
+                                    <option value="2">Terça-feira</option>
+                                    <option value="3">Quarta-feira</option>
+                                    <option value="4">Quinta-feira</option>
+                                    <option value="5">Sexta-feira</option>
+                                    <option value="6">Sábado</option>
+                                </select>
+                            </div>
+                            <div class="input-block">
+                                <label for="time-from">Das</label>
+                                <input type="time" name="time-from[]">
+                            </div>
+                            <div class="input-block">
+                                <label for="time-to">Até</label>
+                                <input type="time" name="time-to[]">
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
+                <footer>
+                    <p><img src="images/icons/warning.svg" alt="AVISO IMPORTANTE">Atenção!</br>É necessario preencher todos os dados</p>
+                    <button type="submit" from="create-class">Salvar os dados</button>
+                </footer>
             </main>
         </div>
     </body>
